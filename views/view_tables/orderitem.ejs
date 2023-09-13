@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>E-Commerce</title>
+</head>
+
+<body>
+
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>
+                    OrderItemID
+                </th>
+                <th>
+                    OrderID
+                </th>
+                <th>
+                    ProductID
+                </th>
+                <th>
+                    Quantity
+                </th>
+                <th>
+                    Subtotal
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(var i=0;i<data.length;i++){ %>
+                <tr>
+                    <td>
+                        <%=data[i].OrderItemID%>
+                    </td>
+                    <td>
+                        <%=data[i].OrderID%>
+                    </td>
+                    <td>
+                        <%=data[i].ProductID%>
+                    </td>
+                    <td>
+                        <%=data[i].Quantity%>
+                    </td>
+                    <td>
+                        <%=data[i].Subtotal%>
+                    </td>
+
+                </tr>
+
+                <%}%>
+
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>

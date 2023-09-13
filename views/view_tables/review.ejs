@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>E-Commerce</title>
+</head>
+
+<body>
+
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>
+                    ReviewID
+                </th>
+                <th>
+                    ProductID
+                </th>
+                <th>
+                    CustomerID
+                </th>
+                <th>
+                    Rating
+                </th>
+                <th>
+                    Comment
+                </th>
+                <th>
+                    Date
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(var i=0;i<data.length;i++){ %>
+                <tr>
+                    <td>
+                        <%=data[i].ReviewID%>
+                    </td>
+                    <td>
+                        <%=data[i].ProductID%>
+                    </td>
+                    <td>
+                        <%=data[i].CustomerID%>
+                    </td>
+                    <td>
+                        <%=data[i].Rating%>
+                    </td>
+                    <td>
+                        <%=data[i].Comment%>
+                    </td>
+                    <td>
+                        <%=data[i].Date%>
+                    </td>
+
+                </tr>
+
+                <%}%>
+
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>

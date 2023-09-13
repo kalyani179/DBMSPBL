@@ -1,0 +1,43 @@
+<%-include("partials/header")-%>
+
+    <h1 class="text-xl text-lime-600 font-medium mx-auto mt-5 mb-6 font-serif" style="letter-spacing: 1px;">
+        <%=tableName%>
+    </h1>
+    <form action="/<%=post%>" method="post">
+        <div>
+            <input class="border-2 border-b-lime-500 border-t-transparent border-l-transparent border-r-transparent w-72 m-3 p-0.5 focus:outline-none <%=visibility1%>" type="text" name="<%=n1%>" placeholder="<%=p1%>" autofocus>
+        </div>
+        <div>
+            <input class="border-2 border-b-lime-500 border-t-transparent border-l-transparent border-r-transparent w-72 m-3 p-0.5 focus:outline-none <%=visibility1%>" type="text" name="<%=n2%>" placeholder="<%=p2%>">
+        </div>
+        <div>
+            <input class="border-2 border-b-lime-500 border-t-transparent border-l-transparent border-r-transparent w-72 m-3 p-0.5 focus:outline-none <%=visibility1%>" type="text" name="<%=n3%>" placeholder="<%=p3%>">
+        </div>
+        <div>
+            <input class="border-2 border-b-lime-500 border-t-transparent border-l-transparent border-r-transparent w-72 m-3 p-0.5 focus:outline-none <%=visibility2%>" type="text" name="<%=n4%>" placeholder="<%=p4%>">
+        </div>
+        <div>
+            <input class="border-2 border-b-lime-500 border-t-transparent border-l-transparent border-r-transparent w-72 m-3 p-0.5 focus:outline-none <%=visibility2%>" type="text" name="<%=n5%>" placeholder="<%=p5%>">
+        </div>
+        <div>
+            <input class="border-2 border-b-lime-500 border-t-transparent border-l-transparent border-r-transparent w-72 m-3 p-0.5 focus:outline-none <%=visibility3%>" type="text" name="<%=n6%>" placeholder="<%=p6%>">
+        </div>
+        <div>
+            <input class="border-2 border-b-lime-500 border-t-transparent border-l-transparent border-r-transparent w-72 m-3 p-0.5 focus:outline-none <%=visibility4%>" type="text" name="<%=n7%>" placeholder="<%=p7%>">
+        </div>
+        <div>
+            <input class="border-2 border-b-lime-500 border-t-transparent border-l-transparent border-r-transparent w-72 m-3 p-0.5 focus:outline-none <%=visibility5%>" type="text" name="<%=n8%>" placeholder="<%=p8%>">
+        </div>
+        <div>
+            <input class="border-2 border-b-lime-500 border-t-transparent border-l-transparent border-r-transparent w-72 m-3 p-0.5 focus:outline-none <%=visibility5%>" type="text" name="<%=n9%>" placeholder="<%=p9%>">
+        </div>
+        <p class="text-center font-normal mt-5 text-red-600 <%=visibility%>">
+            <%=error%>
+        </p>
+        <div class="bg-lime-400 rounded-lg text-center w-36 mx-auto p-2 mt-5 shadow-lg transition-all ease-in-out hover:-translate-all hover:scale-110 hover:bg-lime-500 duration-75">
+            <button type="submit">SUBMIT</button>
+        </div>
+
+    </form>
+
+    <%-include("partials/footer")-%>

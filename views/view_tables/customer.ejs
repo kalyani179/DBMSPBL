@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>E-Commerce</title>
+</head>
+
+<body>
+
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>
+                    CustomerID
+                </th>
+                <th>
+                    FirstName
+                </th>
+                <th>
+                    LastName
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    PhoneNumber
+                </th>
+                <th>
+                    Address
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(var i=0;i<data.length;i++){ %>
+                <tr>
+                    <td>
+                        <%=data[i].CustomerID%>
+                    </td>
+                    <td>
+                        <%=data[i].FirstName%>
+                    </td>
+                    <td>
+                        <%=data[i].LastName%>
+                    </td>
+                    <td>
+                        <%=data[i].Email%>
+                    </td>
+                    <td>
+                        <%=data[i].PhoneNumber%>
+                    </td>
+                    <td>
+                        <%=data[i].Address%>
+                    </td>
+
+                </tr>
+
+                <%}%>
+
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>

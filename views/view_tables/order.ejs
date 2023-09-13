@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>E-Commerce</title>
+</head>
+
+<body>
+
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>
+                    OrderID
+                </th>
+                <th>
+                    CustomerID
+                </th>
+                <th>
+                    OrderDate
+                </th>
+                <th>
+                    Status
+                </th>
+                <th>
+                    ShippingAddress
+                </th>
+                <th>
+                    TotalAmount
+                </th>
+                <th>
+                    PaymentMethod
+                </th>
+                <th>
+                    TransactionID
+                </th>
+                <th>
+                    TrackingNumber
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <% for(var i=0;i<data.length;i++){ %>
+                <tr>
+                    <td>
+                        <%=data[i].OrderID%>
+                    </td>
+                    <td>
+                        <%=data[i].CustomerID%>
+                    </td>
+                    <td>
+                        <%=data[i].OrderDate%>
+                    </td>
+                    <td>
+                        <%=data[i].Status%>
+                    </td>
+                    <td>
+                        <%=data[i].ShippingAddress%>
+                    </td>
+                    <td>
+                        <%=data[i].TotalAmount%>
+                    </td>
+                    <td>
+                        <%=data[i].TransactionID%>
+                    </td>
+                    <td>
+                        <%=data[i].TrackingNumber%>
+                    </td>
+
+                </tr>
+
+                <%}%>
+
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>
+
+</html>
